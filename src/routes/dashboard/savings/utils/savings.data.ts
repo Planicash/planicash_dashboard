@@ -1,0 +1,40 @@
+import type { Savings } from "./savings";
+
+export const mockSavings: Savings[] = [
+    {
+        id: "1",
+        name: "Emergency Fund",
+        description: "6 months of expenses",
+        currentAmount: 15000,
+        targetAmount: 30000,
+        monthlyContribution: 1000,
+        category: "emergency",
+        status: "active",
+        startDate: "2024-01-01",
+        targetDate: "2024-12-31",
+    },
+    {
+        id: "2",
+        name: "Vacation to Europe",
+        description: "Summer vacation fund",
+        currentAmount: 3500,
+        targetAmount: 5000,
+        monthlyContribution: 500,
+        category: "vacation",
+        status: "active",
+        startDate: "2024-01-01",
+        targetDate: "2024-06-01",
+    },
+    {
+        id: "3",
+        name: "New Car",
+        description: "Down payment for new car",
+        currentAmount: 8000,
+        targetAmount: 8000,
+        monthlyContribution: 0,
+        category: "other",
+        status: "completed",
+        startDate: "2023-06-01",
+        targetDate: "2024-01-01",
+    },
+]

@@ -1,0 +1,55 @@
+import type { NotificationType } from "./notifications";
+
+export const mockNotifications: NotificationType[] = [
+    {
+        id: "1",
+        title: "New Transaction",
+        message: "Payment received from John Doe",
+        type: "transaction",
+        timestamp: "2 minutes ago",
+        read: false,
+        amount: 1250,
+    },
+    {
+        id: "2",
+        title: "Payment Due",
+        message: "Credit card payment due in 3 days",
+        type: "payment",
+        timestamp: "1 hour ago",
+        read: false,
+        amount: 450,
+    },
+    {
+        id: "3",
+        title: "Income Added",
+        message: "Monthly salary has been processed",
+        type: "income",
+        timestamp: "3 hours ago",
+        read: true,
+        amount: 5000,
+    },
+    {
+        id: "4",
+        title: "Goal Achievement",
+        message: "You've reached 75% of your Emergency Fund goal!",
+        type: "alert",
+        timestamp: "1 day ago",
+        read: false,
+    },
+    {
+        id: "5",
+        title: "System Update",
+        message: "New features have been added to your dashboard",
+        type: "system",
+        timestamp: "2 days ago",
+        read: true,
+    },
+    {
+        id: "6",
+        title: "Low Balance Alert",
+        message: "Your checking account balance is below $500",
+        type: "alert",
+        timestamp: "3 days ago",
+        read: false,
+    },
+]
