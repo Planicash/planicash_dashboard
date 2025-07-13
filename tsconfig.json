@@ -8,12 +8,13 @@
       "path": "./tsconfig.node.json"
     }
   ],
-  "compilerOptions": {
+    "compilerOptions": {
+    "jsx": "react-jsx",
+    "jsxImportSource": "preact",
     "baseUrl": ".",
+    "types": ["vite/client"],
     "paths": {
-      "@/*": [
-        "src/*"
-      ]
-    },
-  }
+      "react": ["preact/compat"],
+      "react-dom": ["preact/compat"]
+    }}
 }
